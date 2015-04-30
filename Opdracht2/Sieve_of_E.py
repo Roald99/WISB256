@@ -24,9 +24,6 @@ def sieve(n, outputfile):
             primes.write(str(i))
             primes.write('\n')
         i+=1
-    print(counter)
-    print('Number of arguments:', len(sys.argv), 'arguments.')
-    print('Argument List:', str(sys.argv))
     T2 = time.perf_counter()
-    print((T2 - T1))
+    print('Found', counter, 'Prime numbers smaller than', n , 'in', T2 - T1)
 sieve(int(sys.argv[1]), sys.argv[2])
